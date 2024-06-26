@@ -9,6 +9,7 @@ build = "build.rs"
 
 [dependencies]
 slint = "1.6"
+soloud = "1.0.5"
 
 [build-dependencies]
 slint-build = "1.6"

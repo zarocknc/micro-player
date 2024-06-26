@@ -1,6 +1,9 @@
 import { Button, VerticalBox } from "std-widgets.slint";
 
 export component AppWindow inherits Window {
+    title: "Micro Player";
+    width: 400px;
+    height: 200px;
     in-out property<int> counter: 42;
     callback request-increase-value();
     VerticalBox {
@@ -8,7 +11,7 @@ export component AppWindow inherits Window {
             text: "Counter: \{root.counter}";
         }
         Button {
-            text: "Increase value";
+            text: "Reproducir";
             clicked => {
                 root.request-increase-value();
             }
