@@ -13,3 +13,20 @@ soloud = "1.0.5"
 
 [build-dependencies]
 slint-build = "1.6"
+
+[package.metadata.packager]
+name = "microplayer"
+product-name = "microplayer"
+identifier = "com.pointererp.microplayer"
+version = "0.0.1"
+before-each-package-command = "cargo build --release"
+out-dir = "target/release"
+resources = [
+    "Cargo.toml",
+  "resources",
+  "src"
+]
+icons=[
+  "resources/icons/icon256x256.png",
+  "resources/icons/icon.ico"
+]
